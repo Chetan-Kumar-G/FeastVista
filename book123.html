@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="book123.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="book">
+        <!-- For Next/Prev Controls -->
+        <input type="checkbox" id="c1">
+        <input type="checkbox" id="c2">
+        <input type="checkbox" id="c3">
+        <!-- Book Cover -->
+        <div id="cover" style="background-color:transparent;">
+        </div>
+        <!-- Pages -->
+        <div class="flip-book">
+          <!-- Page 1 -->
+          <div class="flip" id="p1">
+            <div class="back">
+              <label for="c1" class="back-btn">Before</label>
+            </div>
+            <div class="front" style="background-color: pink;">
+              <h2>Page 1</h2>
+              <label for="c1" class="next-btn">NEXT</label>
+            </div>
+          </div>
+          <!-- Page 2 -->
+          <div class="flip" id="p2">
+            <div class="back">
+              <img src="2.jpg" alt="">
+              <label for="c2" class="back-btn">Before</label>
+            </div>
+            <div class="front" style="background-color: pink;">
+              <h2>Page 2</h2>
+              <label for="c2" class="next-btn">NEXT</label>
+            </div>
+          </div>
+          <!-- Page 3 -->
+          <div class="flip" id="p3">
+            <div class="back">
+              <label for="c3" class="back-btn">Before</label>
+            </div>
+            <div class="front" style="background-color: pink;"> 
+              <h2>Page 3</h2>
+              <label for="c3" class="next-btn">NEXT</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

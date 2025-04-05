@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipbook Effect</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #eee;
+        }
+        .book {
+            width: 600px;
+            height: 400px;
+            position: relative;
+            perspective: 1500px;
+        }
+        .page {
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            background: white;
+            border: 2px solid #ccc;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            transform-origin: right;
+            transition: transform 1s ease-in-out;
+        }
+        .left-page {
+            left: 0;
+            transform-origin: left;
+            background-color: #90be6d;
+        }
+        .right-page {
+            right: 0;
+            background-color: #f9c74f;
+            z-index: 2;
+        }
+        .book:hover .right-page {
+            transform: rotateY(-180deg);
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="book">
+        <div class="page left-page">Page 2</div>
+        <div class="page right-page">Page 1</div>
+    </div>
+</body>
+</html>

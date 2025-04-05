@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Step Form</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <!-- Form Steps -->
+        <div class="form-step active" id="step1">
+            <h2>Step 1</h2>
+            <p>Enter your name:</p>
+            <input type="text" placeholder="Your Name">
+        </div>
+
+        <div class="form-step" id="step2">
+            <h2>Step 2</h2>
+            <p>Enter your email:</p>
+            <input type="email" placeholder="Your Email">
+        </div>
+
+        <div class="form-step" id="step3">
+            <h2>Step 3</h2>
+            <p>Confirm & Submit</p>
+            <button class="submit-btn">Submit</button>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="button-group">
+            <button id="prevBtn" onclick="changeStep(-1)">Previous</button>
+            <button id="nextBtn" onclick="changeStep(1)">Next</button>
+        </div>
+
+        <!-- Progress Dots -->
+        <div class="progress-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+
+    <script src="forms.js"></script>
+</body>
+</html>
